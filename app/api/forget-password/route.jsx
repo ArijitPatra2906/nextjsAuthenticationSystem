@@ -1,5 +1,5 @@
 import { GenerateForgetToken } from "@/lib/service/Token.service";
-import { SendEmail } from "@/lib/Service/Mail.service";
+import { SendEmail } from "@/lib/service/mail.service";
 
 import { ConnectDB } from "@/lib/config/db";
 import { UserModel } from "@/lib/models/User.models";
