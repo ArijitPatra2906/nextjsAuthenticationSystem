@@ -20,7 +20,7 @@ export const SendEmail = async (name, token, email) => {
 
         Hey, ${name},
         your forget passwrod link is below click the link <br/>
-        <a href="http://localhost:3000/update-password?token=${token}">Click</a>
+        <a href="https://nextjs-authentication-system.vercel.app/update-password?token=${token}">Click</a>
 
         `, // html body
   });
