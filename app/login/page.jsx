@@ -43,7 +43,6 @@ const LoginPage = () => {
       router.push("/");
       setLoading(false);
     } catch (error) {
-      console.log({ error });
       toast.error(error?.response?.data?.error);
       setLoading(false);
     }
