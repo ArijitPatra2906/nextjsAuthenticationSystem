@@ -4,7 +4,7 @@ import { NextResponse } from "next/server";
 
 ConnectDB();
 export const POST = async (request) => {
-  const { name, email, password } = await request.json();
+  const { name, email, password, phoneNumber } = await request.json();
 
   const existUser = await UserModel.findOne({ email });
   if (existUser) {
@@ -20,6 +20,7 @@ export const POST = async (request) => {
     name,
     email,
     password,
+    phoneNumber,
   });
   return NextResponse.json(
     { error: null, msg: "User Register Successfully" },

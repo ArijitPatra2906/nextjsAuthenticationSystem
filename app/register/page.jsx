@@ -33,6 +33,7 @@ const RegisterPage = () => {
     name: "",
     email: "",
     password: "",
+    phoneNumber: "",
   };
 
   const onSubmitHandler = async (e, { resetForm }) => {
@@ -87,6 +88,27 @@ const RegisterPage = () => {
                   id="email"
                   name="email"
                   placeholder="Enter Your Email"
+                  className="w-full py-2 px-10 ring-2 ring-indigo-400 outline-none border-none "
+                />
+                <IoMdMail
+                  size={22}
+                  className="absolute top-0 left-3 mt-2 text-green-500 cursor-pointer"
+                />
+              </div>
+              <ErrorMessage
+                name="email"
+                component={"p"}
+                className="text-red-500"
+              />
+            </div>
+            <div className="relative mb-3">
+              <label htmlFor="phoneNumber">phoneNumber</label>
+              <div className="relative">
+                <Field
+                  type="number"
+                  id="phoneNumber"
+                  name="phoneNumber"
+                  placeholder="Enter Your phoneNumber"
                   className="w-full py-2 px-10 ring-2 ring-indigo-400 outline-none border-none "
                 />
                 <IoMdMail
